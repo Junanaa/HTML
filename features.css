@@ -1,0 +1,40 @@
+section{
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem 0;
+}
+section.features{
+    background: #f2f2f2;
+}
+section .title{
+    margin-bottom: 2rem;
+}
+section .title h4{
+    font-size: 1.5rem;
+    color: #ed4848;
+}
+section .title h2{
+    font-size: 3.5rem;
+}
+section .Do-self{
+    display: flex;
+    justify-content: space-between;
+}
+section .Do-self .do-in{
+    border: 1px solid blue;
+    background: #fff;
+    width: 30%;
+    padding: 2rem;
+}
+section .Do-self .do-in .icon i{
+    font-size: 2.5rem;
+    color: #ed4848;
+}
+section .Do-self .do-in h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+section .Do-self .do-in p{
+    font-size: 1.2rem;
+}
