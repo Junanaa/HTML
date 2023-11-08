@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+/* 기본 마진 초기화   *은 모든요소를 얘기함 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+.container{
+    border: 1px solid red;
+    width: 1140px;
+    margin: 0 auto;
+}

@@ -1,0 +1,33 @@
+h1{
+    border: 3px solid pink ;
+}
+header{
+    position: fixed;
+    width:100%;
+    background: linear-gradient(#00000013, #000000a2);
+    color: #fff;
+    padding: 1rem;
+}
+
+/*header css*/
+/* 가로로배열 float,flex space-between은 양쪽끝으로 정렬*/
+header .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+header nav ul{
+    display: flex;
+    
+}
+header nav ul li{
+    padding: 10px;
+}
+header h1 a{
+    font-size: 2rem;
+}
+header nav ul li a{
+    font-size: 1.3rem;
+}
+

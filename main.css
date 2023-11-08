@@ -1,0 +1,45 @@
+main{
+    width: 100%; 
+    height: 100vh;
+    /* linear-gradient는 색을주면서 투명도까지 */
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(images/bg.jpg) center center;  
+    background-size: cover;
+    color: #fff;
+
+    display: flex;
+    justify-content: center; /*가로중앙*/
+    align-items: center; /*세로중앙*/
+    text-align: center;
+}
+main h4{
+    font-size: 2rem; /*em은 부모폰트를 이어서 ex) <li>2em은 부모 <ul>font를 10px줬다하면 2em은 20px가됨 rem은 */
+}
+main h2{
+    font-size: 3.5rem;
+    margin: 1rem 0;/*welecome과 lorem의 사이간격조정*/
+    letter-spacing: 3px;/*자간사이 간격 조정 */
+    font-family: 'Varela Round', sans-serif;
+}
+main p{
+    max-width: 52%;
+    margin: 0 auto;
+}
+main button.down{
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+main button.mouse{
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{margin: 0;}
+        .container{
+            border: 5px solid blue;
+            width: 400px;
+            height: 600px;
+        }
+        p{
+            border: 5px solid red;
+            width: 150px;
+            height: 150px;
+        }
+        .item1{
+            opacity: 50%;
+            background: pink;
+            position: relative;
+            top: 50%;
+            left: 50%;
+        }
+        .item2{
+            background: yellow;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+        }
+        .item3{
+            background: blue;
+            position: fixed;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="item1">BOX1</p>
+        <p class="item2">BOX2</p>
+        <p class="item3">BOX3</p>
+    </div>
+</body>
+</html>
