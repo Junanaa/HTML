@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+section{
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem 0;
+}
+section .title{
+    margin-bottom: 2rem;
+}
+section .title h4{
+    font-size: 1.5rem;
+    color: #ed4848;
+}
+section .title h2{
+    font-size: 3.5rem;
+    color: rgb(255, 44, 209);
+
+}
+section .container .about-self{
+    display: flex;
+    justify-content: space-between;
+}
+section .container .about-self .left
+{
+    width: 50%;
+}
+section .container .about-self .left img{
+    max-width: 100%;
+}
+section .container .about-self .right{
+    width: 50%;
+    padding: 0 2rem;
+}
+section .container .about-self .right h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+section .container .about-self .right h3 span{
+    color: #ed4848;
+}
+section .container .about-self .right p{
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+
+}
+section .container .about-self .right .social{
+    font-size: 3rem;
+}
+section .container .about-self .right .social a{
+    margin-right: 1rem;
+}
