@@ -1,0 +1,37 @@
+/*타이틀 css */
+section{
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem 0;
+}
+section.portfolio{
+    background: pink;
+}
+section .title{
+    margin-bottom: 2rem;
+}
+section .title h4{
+    font-size: 1.5rem;
+    color: #ed4848;
+}
+section .title h2{
+    font-size: 3.5rem;
+}
+/*타이틀 css끝 */
+section .portfolio-me{
+    overflow:hidden;
+}
+section .portfolio-me .port-in{
+    border: 1px solid blue;
+    width: 30%;
+    background: #fff;
+    float: left;
+    margin-right: 5%;
+}
+section .portfolio-me .port-in:nth-child(3n){
+    margin-right: 0;
+}
+section .portfolio-me .port-in img{
+    width: 100%;
+}

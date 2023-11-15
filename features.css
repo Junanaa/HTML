@@ -1,3 +1,4 @@
+/*타이틀 css */
 section{
     /* font-family: 'Poppins', sans-serif;
     font-family: 'Varela Round', sans-serif; */
@@ -17,16 +18,27 @@ section .title h4{
 section .title h2{
     font-size: 3.5rem;
 }
+/*타이틀 css끝 */
 section .Do-self{
     display: flex;
     justify-content: space-between;
 }
+
 section .Do-self .do-in{
-    border: 1px solid blue;
     background: #fff;
     width: 30%;
     padding: 2rem;
+    cursor: pointer;
 }
+section .Do-self .do-in:hover{
+    background : lightpink;
+    color: #fff;
+    
+}
+section .Do-self .do-in:hover .icon i{
+    color: #fff;
+}
+
 section .Do-self .do-in .icon i{
     font-size: 2.5rem;
     color: #ed4848;
