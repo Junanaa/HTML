@@ -28,10 +28,22 @@ section .portfolio-me .port-in{
     background: #fff;
     float: left;
     margin-right: 5%;
+    padding: 1rem 1rem 2rem 1rem;
+    margin-bottom: 3rem;
 }
+/*3번째 마다 margin-right 없애기*/
 section .portfolio-me .port-in:nth-child(3n){
     margin-right: 0;
 }
+/*이미지 크기가 부모요소를 벗어나지 않도록*/
 section .portfolio-me .port-in img{
     width: 100%;
+}
+section .portfolio-me .port-in p{
+    color: #fa6a6a;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+section .portfolio-me .port-in h3{
+    font-size: 1.4rem;
 }
