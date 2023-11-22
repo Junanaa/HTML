@@ -179,7 +179,7 @@ section .do-self .do-in p{
 /* features css 끝 */
 /* bg 시작 */
 .bg{
-    background: url(images/me_bg.jpg) center center;
+    background: url(images/me1.jpg) center center;
     background-size: cover;
     height: 650px;
     background-attachment: fixed;
