@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
-/* 기본 마진 초기화   *은 모든요소를 얘기함 */
+/* 초기화 */
 *{
     margin: 0;
     padding: 0;
@@ -7,13 +7,281 @@
 }
 a, a:link, a:visited{
     text-decoration: none;
-    color: inherit;
+    color: inherit; /* 부모한테 상속받음 */
 }
 li{
     list-style: none;
 }
 .container{
-    border: 1px solid red;
     width: 1140px;
     margin: 0 auto;
+
 }
+/* header css 시작 */
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    color: #fff;
+    padding: 1rem;
+}
+header .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul{
+    display: flex;
+}
+header nav li{
+    padding: 10px;
+}
+header h1 a{
+    font-size: 2rem;
+}
+header nav ul li a{
+    font-size: 1.3rem;
+}
+/* header css 끝 */
+/* main css 시작 */
+main{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)), url(images/bg.jpg) center center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;/* 가로 중앙 */
+    align-items: center;/* 세로 중앙 */
+    text-align: center;
+}
+main h4{
+    font-size: 2rem; /* em:폰트 키움(css에서 fontsize사용하면 부모폰트 사이즈 적용)  rem:폰트 작아짐*/
+}
+main h2{
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+main p{
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 1.23rem;
+}
+main button.down{
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+main button.mouse{
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+}
+/* main css 끝 */
+/* 타이틀 CSS 시작 */
+section{
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem 0;
+}
+section:nth-child(2n){
+    background: #fff1f1;
+}
+section .title{
+    margin-bottom: 3rem;
+}
+section .title h4{
+    font-size: 1.5rem;
+    color: #ed4848;
+}
+section .title h2{
+    font-size: 3.5rem;
+}
+/* 타이틀 CSS 끝 */
+/* about css 시작 */
+section .container .about-self{
+    display: flex;
+    justify-content: space-between;
+}
+section .container .about-self .left{
+    width: 50%;
+}
+section .container .about-self .left img{
+    max-width: 100%;
+}
+section .container .about-self .right{
+    width: 50%;
+    padding: 0 2rem;
+}
+section .container .about-self .right h3{
+    font-size : 2.3rem;
+    margin-bottom: 0.5rem;
+}
+section .container .about-self .right h3 span{
+    color: #ed4848;
+}
+section .container .about-self .right p{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+section .container .about-self .right .social{
+    font-size: 2rem;
+}
+section .container .about-self .right .social a{
+    margin-right: 0.3rem;
+}
+/* about css 끝 */
+/* features css 시작 */
+section .do-self{
+    overflow: hidden;
+}
+section .do-self .do-in{
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+    background: #fff;
+    width: 30%;
+    padding: 2rem;
+    cursor: pointer;
+}
+section .do-self .do-in:hover{
+    background: lightcoral;
+    color: #fff;
+}
+section .do-self .do-in:hover .icon i{
+    color: #fff;
+}
+section .do-self .do-in:last-child{
+    margin-right: 0%; /* 마지막칸 오른쪽 5% 빼줌*/
+}
+section .do-self .do-in .icon i{
+    font-size: 2.7rem;
+    color: #ed4848;
+}
+section .do-self .do-in h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+section .do-self .do-in p{
+    font-size: 1.2rem;
+}
+/* features css 끝 */
+/* bg 시작 */
+.bg{
+    background: url(images/me_bg.jpg) center center;
+    background-size: cover;
+    height: 650px;
+    background-attachment: fixed;
+    /* background-attachment: fixed; 배경 이미지를 고정함 (스크롤해도 배경 고정)*/
+}
+/* bg 끝 */
+/* portfolio css 시작 */
+section .portfolio-me{
+    overflow: hidden;
+}
+section .portfolio-me .port-in{
+    border: 1px solid #ccc;
+    width: 30%;
+    background: #fff;
+    float: left;
+    margin-right: 5%;
+    padding: 1rem 1rem 2rem 1rem;
+    margin-bottom: 3rem;
+}
+/* 3번째 마다 margin-right 없애기 */
+section .portfolio-me .port-in:nth-child(3n){
+    margin-right: 0%;
+}
+/* 이미지 크기가 부모 요소를 벗어나지 않도록 */
+section .portfolio-me .port-in img{
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+section .portfolio-me .port-in p{
+    color: #fa6a6a;
+    margin: 0.5rem 0;
+}
+section .portfolio-me .port-in h3{
+    font-size: 1.7rem;
+}
+/* portfolio css 끝 */
+/* contact css 시작 */
+/* float = 자식한테 명령  flex = 부모한테 명령 */
+section .contact-me{
+    overflow: hidden;
+}
+section .contact-me .left{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+section .contact-me .left .card{
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+section .contact-me .left .card .icon i{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+section .contact-me .right{
+    border: 1px solid #ccc;
+    width: 65%;
+    float: right;
+    padding: 1rem;
+}
+section .contact-me .right .form-group{
+    margin-bottom: 1.5rem;
+}
+section .contact-me .right .form-group label{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+section .contact-me .right .form-group input{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+section .contact-me .right .form-group input:focus{
+    border: 1px solid #719ece;
+    box-shadow: 0px 0px 10px #719ece; /* X,Y,번짐 */
+}
+section .contact-me .right .form-group textarea{
+    width: 100%;
+    height: 300px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+
+}
+section .contact-me .right .form-group textarea:focus{
+    border: 1px solid #719ece;
+    box-shadow: 0px 0px 10px #719ece;
+}
+section .contact-me .right button{
+    width: 100%;
+    background-color: orange;
+    border: none;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.3rem;
+}
+/* contact css 끝 */
