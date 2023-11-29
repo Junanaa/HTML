@@ -24,6 +24,8 @@ header{
     width: 100%;
     color: #fff;
     padding: 1rem;
+    /* background-color: #000; */
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3));
 }
 header .container{
     width: 100%;
@@ -65,6 +67,22 @@ main h2{
     font-family: 'Poppins', sans-serif;
     font-family: 'Varela Round', sans-serif;
 }
+main h2 span::after{
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: #fff;
+    display: inline-block;
+    animation: blink 0.7s ease-in-out infinite;
+}
+@keyframes blink{
+    0%{
+        opacity: 1; /*투명도 조절*/
+    }
+    100%{
+        opacity: 0;
+    }
+}
 main p{
     max-width: 60%;
     margin: 0 auto;
@@ -88,6 +106,19 @@ main button.mouse{
     position: absolute;
     bottom: 2rem;
     left: 50%;
+    animation: upDown 1s ease-in-out infinite;
+}
+@keyframes upDown{
+    0%{
+        bottom: 2rem;
+    }
+    50%{
+        bottom:3rem;
+    }
+    100%{
+        bottom: 2rem;
+    }
+
 }
 /* main css 끝 */
 /* 타이틀 CSS 시작 */
